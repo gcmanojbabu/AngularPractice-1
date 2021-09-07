@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <app-header [headerMessage]="messages"></app-header>
+            <div>
+                <tr *ngFor="let message of messages">
+                    <td>{{message.msg}}</td>
+                </tr>
+            </div>
+            From input field: {{ReceivedMessage}}
+            <app-footer (messageEvent)="receiveMessage($event)"></app-footer>        
+        </div>
+    </div>
+</div>

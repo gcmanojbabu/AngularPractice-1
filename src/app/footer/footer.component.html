@@ -1,0 +1,4 @@
+<br>
+<input type="text" class="form-control" [(ngModel)]='inputMessage' placeholder={{placeholder}}>
+<br>
+<button class="btn btn-primary" [disabled]="inputMessage === ''" (click)='sendMessage()'>Send</button>
