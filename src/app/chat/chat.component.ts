@@ -10,7 +10,8 @@ export class ChatComponent implements OnInit, AfterViewInit{
 
   idNum =0;
   messages = [];
-  
+  temp ='';
+
   @ViewChild(FooterComponent) child;
   
   constructor() { }
@@ -27,6 +28,9 @@ export class ChatComponent implements OnInit, AfterViewInit{
     this.ReceivedMessage = $event;
     this.idNum=this.idNum+1;
     this.messages.push({id: this.idNum, msg: this.ReceivedMessage});
+    if (this.idNum==1){
+      this.temp = this.ReceivedMessage;
+    }
     
   }
 
