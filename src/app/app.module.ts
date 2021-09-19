@@ -9,6 +9,7 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ChatComponent } from './chat/chat.component';
+import { AssignDisplayDetailsComponent } from './assign-display-details/assign-display-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ChatComponent } from './chat/chat.component';
     SuccessAlertComponent,
     HeaderComponent,
     FooterComponent,
-    ChatComponent
+    ChatComponent,
+    AssignDisplayDetailsComponent
   ],
   imports: [
     BrowserModule,

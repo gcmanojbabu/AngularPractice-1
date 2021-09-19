@@ -1,0 +1,10 @@
+<hr style="color: white;">
+<!-- <button class="btn btn-primary" (click)='showPass = !showPass'>Display details</button> -->
+<button class="btn btn-primary" (click)='onToggleDetails()'>Display details</button>
+<p *ngIf='showPass'>Password: Tuna</p>
+<div *ngFor='let logItem of log'
+[ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}">
+    {{logItem}}
+</div>
+<hr style="color: white;">
+
