@@ -1,4 +1,6 @@
-# MyFirstApp - basics 
+# MyFirstApp 
+Basics 
+Source: Udemy - Angular - The Complete Guide (2022 Edition) 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
 
